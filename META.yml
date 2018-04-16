@@ -13,7 +13,7 @@ build_requires:
 requires:
     DBD::mysql:    0.00
     DBI:           0.00
-    Digest::SHA1:  0.00
+    Digest::SHA:   0.00
 no_index:
     directory:
         - t

@@ -5,7 +5,7 @@ use strict;
 use Socket;
 use Carp qw(cluck carp croak);
 
-use Digest::SHA1;
+use Digest::SHA;
 
 our $VERSION = '0.42';
 
@@ -1306,7 +1306,7 @@ sub passwordMatches {
 	my ($myserver, $password) = @_;
 #### $password
 
-	my $ctx = Digest::SHA1->new;
+	my $ctx = Digest::SHA->new;
 	$ctx->reset;
 	$ctx->add($password);
 	my $stage1 = $ctx->digest;

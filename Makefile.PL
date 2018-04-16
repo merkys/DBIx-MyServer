@@ -6,7 +6,7 @@ WriteMakefile(
 	NAME              => 'DBIx::MyServer',
 	VERSION_FROM      => 'lib/DBIx/MyServer.pm',
 	PREREQ_PM         => {
-			'Digest::SHA1' => '0.00',
+			'Digest::SHA' => '0.00',
 			'DBI' => '0.00',
 			'DBD::mysql' => '0.00'
 	},
